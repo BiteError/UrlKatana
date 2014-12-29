@@ -1,0 +1,15 @@
+﻿<div>
+    <form name="newUrl">
+        <h1>Welcome to UrlKatana</h1>
+
+        <div>
+            <span>Enter URL here:</span>
+            <input type="text" name="LongUrl" ng-model="url.LongUrl" required />
+        </div>
+        <div>
+            <button ng-click="save()" ng-disabled="isClean() || newUrl.$invalid">
+                Get short URL
+            </button>
+        </div>
+</form>
+</div>
